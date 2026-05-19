@@ -569,7 +569,7 @@ const Greeting = () => {
           {/* Left Title Area */}
           <div className="lg:col-span-4 lg:sticky lg:top-32">
             <span className="text-brand-gold font-bold tracking-widest uppercase text-sm mb-4 block">CEO Message</span>
-            <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-6 tracking-tight leading-tight">
+            <h2 className="text-2xl md:text-3xl font-black text-brand-dark mb-6 tracking-tight leading-tight">
               회사 소개 및 인사말
             </h2>
             <div className="w-12 h-1 bg-brand-gold mb-8"></div>

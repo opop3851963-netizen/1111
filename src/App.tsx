@@ -33,11 +33,11 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: "회사소개", href: "#" },
-    { name: "사업분야", href: "#" },
-    { name: "포트폴리오", href: "#" },
-    { name: "면허현황", href: "#" },
-    { name: "고객문의", href: "#" },
+    { name: "회사소개", href: "#about" },
+    { name: "사업분야", href: "#services" },
+    { name: "포트폴리오", href: "#portfolio" },
+    { name: "면허현황", href: "#history" },
+    { name: "고객문의", href: "#contact" },
   ];
 
   return (
@@ -192,7 +192,7 @@ const Expertise = () => {
   ];
 
   return (
-    <section className="py-32 bg-slate-50">
+    <section id="services" className="py-32 bg-slate-50 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-2xl">
@@ -386,7 +386,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="py-32 bg-white">
+    <section id="portfolio" className="py-32 bg-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-6 tracking-tight">Portfolio</h2>
@@ -439,7 +439,7 @@ const History = () => {
   ];
 
   return (
-    <section className="py-32 bg-slate-900 text-white overflow-hidden">
+    <section id="history" className="py-32 bg-slate-900 text-white overflow-hidden scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
@@ -490,7 +490,7 @@ const History = () => {
 
 const ContactForm = () => {
   return (
-    <section className="py-32 bg-white">
+    <section id="contact" className="py-32 bg-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="bg-slate-50 rounded-[40px] overflow-hidden shadow-2xl shadow-slate-200 flex flex-col lg:flex-row">
           <div className="lg:w-1/3 bg-brand-dark p-12 text-white flex flex-col justify-between">
@@ -561,12 +561,74 @@ const ContactForm = () => {
   );
 };
 
+const Greeting = () => {
+  return (
+    <section id="about" className="py-32 bg-white scroll-mt-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          {/* Left Title Area */}
+          <div className="lg:col-span-4 lg:sticky lg:top-32">
+            <span className="text-brand-gold font-bold tracking-widest uppercase text-sm mb-4 block">CEO Message</span>
+            <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-6 tracking-tight leading-tight">
+              회사 소개 및 인사말
+            </h2>
+            <div className="w-12 h-1 bg-brand-gold mb-8"></div>
+            <div className="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+              <p className="text-slate-400 text-sm mb-4">Space & Innovation</p>
+              <h4 className="text-brand-dark font-bold text-lg mb-2">(주)일신아이디 임직원 일동</h4>
+              <p className="text-slate-500 text-sm leading-relaxed">
+                고객의 가치를 최우선으로 생각하며 신뢰로 보답하겠습니다.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Content Area */}
+          <div className="lg:col-span-8 space-y-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-brand-dark leading-snug border-l-4 border-brand-gold pl-6 py-2">
+              "기술과 사람의 조화로 공간의 새로운 가치를 창조합니다."
+            </h3>
+            
+            <div className="space-y-6 text-slate-600 text-base md:text-lg leading-relaxed font-light">
+              <p className="font-bold text-brand-dark text-xl">
+                안녕하십니까,<br />
+                창조와 열정으로 공간의 혁신을 이끌어가는 (주)일신아이디입니다.
+              </p>
+              
+              <p>
+                저희 (주)일신아이디는 기술과 사람의 조화로운 균형을 바탕으로, 빠르게 변화하는 환경 속에서도 '디자인의 전문성'과 '시공의 우수성'이라는 변함없는 원칙을 지키며 고객에게 최상의 만족감을 선사하기 위해 매진해 왔습니다.
+              </p>
+              
+              <p>
+                다양한 정보의 확산으로 나날이 높아지는 고객의 눈높이에 한걸음 더 앞서 나아가고자 합니다. 이를 위해 우수한 인재 등용과 체계적인 관리를 통해 건축 및 인테리어 전반의 전문성을 한층 더 강화하고 있으며, 공간의 창의성과 효율성을 극대화하는 혁신을 지속하고 있습니다.
+              </p>
+              
+              <p>
+                저희가 해결해야 할 영원한 과제는 단순히 아름다운 공간을 구축하는 것에 그치지 않습니다. 투명한 경영과 윤리적인 기업 철학을 바탕으로, 이윤 창출을 넘어 지역사회와 함께 지속 가능한 발전을 이루는 건강한 기업 문화를 만들어가는 것이 (주)일신아이디가 향하는 명확한 목표입니다.
+              </p>
+              
+              <p>
+                지금까지 축적된 경험과 노하우를 바탕으로 공간을 넘어 문화를 만들고, 고객의 가슴에 남는 진정성 있는 이야기를 디자인하겠습니다. 오늘도 지속적인 변화를 통해 업계의 모범적인 리더이자, 여러분의 변함없는 파트너가 되기 위해 진심을 다하겠습니다.
+              </p>
+              
+              <p className="font-semibold text-brand-dark pt-4">
+                (주)일신아이디의 새로운 도전을 계속 응원하고 지켜봐 주시기 바랍니다.<br />
+                감사합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
       <main>
         <Hero />
+        <Greeting />
         <Expertise />
         <History />
         <BentoStats />

@@ -575,7 +575,7 @@ const Greeting = () => {
             <div className="w-12 h-1 bg-brand-gold mb-8"></div>
             <div className="bg-slate-50 p-8 rounded-2xl border border-slate-100">
               <p className="text-slate-400 text-sm mb-4">Space & Innovation</p>
-              <h4 className="text-brand-dark font-bold text-lg mb-2">(주)일신아이디 임직원 일동</h4>
+              <h4 className="text-brand-dark font-bold text-lg mb-2">(주)일신아이디</h4>
               <p className="text-slate-500 text-sm leading-relaxed">
                 고객의 가치를 최우선으로 생각하며 신뢰로 보답하겠습니다.
               </p>
